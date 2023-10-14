@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="79.761">
+    <testcase classname="Register User" name="Register User" time="78.923">
+        <failure message="Cannot locate option with value: June&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Go to url.............................................................passed
+Then Verify that home page is visible successfully..........................passed
+And Click on Signup Login button............................................passed
+Then Verify New User Signup! is visible.....................................passed
+And Enter name and email address............................................passed
+And Click Signup button.....................................................passed
+Then Verify that ENTER ACCOUNT INFORMATION is visible.......................passed
+And Fill details: Title, Name, Email, Password, Date of birth...............failed
+And Select checkbox Sign up for our newsletter!.............................skipped
+And Select checkbox Receive special offers from our partners!...............skipped
+And Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number.skipped
+And Click Create Account button.............................................skipped
+Then Verify that ACCOUNT CREATED! is visible................................skipped
+And Click Continue button...................................................skipped
+Then Verify that Logged in as username is visible...........................skipped
+And Click Delete Account button.............................................skipped
+Then Verify that ACCOUNT DELETED! is visible and click Continue button......skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate option with value: June
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:291)
+	at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
+	at stepDefinitions.loginStepDef.fill_details_title_name_email_password_date_of_birth(loginStepDef.java:72)
+	at ✽.Fill details: Title, Name, Email, Password, Date of birth(file:///C:/Users/ZEYNEP/IdeaProjects/com.AutomationExercies/src/test/resources/features/login.feature:13)
+]]></failure>
+    </testcase>
+</testsuite>
